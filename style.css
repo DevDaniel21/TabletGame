@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cinza: #b3b3b3;
+    --cinza-escuro: #494949;
+    --preto: #020024;
+}
+
+@media screen and (orientation: landscape) {
+    .container {
+        display: grid;
+        grid-template-columns: 2fr 1.4fr auto;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "evidencias criaturas nav"
+        ;
+        width: 100svw;
+        height: 100svh;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+    }
+    
+    .secao-evidencias {
+        display: flex;
+        justify-content: center;
+        background-color: var(--preto);
+        overflow: scroll;
+        grid-area: evidencias;
+        padding: 40px 5px;
+        border-top: 1em solid rgb(44, 43, 43);
+        border-left: 1em solid rgb(44, 43, 43);
+        border-bottom: 1em solid rgb(44, 43, 43);
+    }
+
+    .evidencias, .criaturas {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+        gap: 3em 1px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .criaturas {
+        gap: 3em 0;
+    }
+
+    .secao-criaturas {
+        display: flex;
+        justify-content: center;
+        background-color: var(--cinza-escuro);
+        overflow: scroll;
+        grid-area: criaturas;
+        padding: 40px 10px;
+        border-top: 1em solid rgb(44, 43, 43);
+        border-bottom: 1em solid rgb(44, 43, 43);
+    }
+    
+    .card {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 10svw;
+        height: 10svh;
+        font-size: 16px;
+        background: none;
+        padding:1.7em 3.4em;
+        border: none;
+        font-weight: normal;
+        color: whitesmoke;
+        /* border: 2px solid black; */
+        /* border-radius: 100%; */
+        /* Quando recusado text-decoration: line-through red 2px; */
+        /* Quando selecionado border-radius: 100%; */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100px;
+        font-size: 40px;
+        background-color: var(--cinza);
+        grid-area: nav;
+        border-right: .4em solid rgb(44, 43, 43);
+        border-top: .4em solid rgb(44, 43, 43);
+        border-bottom: .4em solid rgb(44, 43, 43);
+    }
+
+    nav > a {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 100px;
+        box-shadow: 0px -5px 5px 0px black;
+        /* box-shadow: 1px 8px 10px 0px black inset; */
+        color: black;
+    }
+}
