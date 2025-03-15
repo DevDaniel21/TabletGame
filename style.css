@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 
-:root {
-    --cinza: #b3b3b3;
-    --cinza-escuro: #494949;
-    --preto: #020024;
+body {
+    display: flex;
+    border: 1em solid #000000;
+    width: 100svw;
+    height: 100svh;
 }
 
-.container {
+:root {
+    --cinza: #b3b3b3;
+    --cinza-escuro: #747373;
+    --preto: #292727;
+}
+
+main {
     display: none;
 }
 
@@ -31,6 +38,19 @@
     animation: rodar 3s infinite linear;
 }
 
+::-webkit-scrollbar {
+    height: 0;
+    width: .5em;
+    background-color: #4A007B;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #23003B;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #19002A;
+}
+
 @keyframes rodar {
     0% {
         transform: rotate(10deg);
@@ -47,15 +67,9 @@
     .retrato {
         display: none;
     }
-    .container {
-        display: grid;
-        grid-template-columns: 2fr 1.4fr auto;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "evidencias criaturas nav"
-        ;
-        width: 100svw;
-        height: 100svh;
+    main {
+        flex: 1;
+        display: none;
     }
     
     section {
@@ -65,15 +79,13 @@
     }
     
     .secao-evidencias {
+        flex: 1;
         display: flex;
         justify-content: center;
         background-color: var(--preto);
         overflow: scroll;
         grid-area: evidencias;
         padding: 40px 5px;
-        border-top: 1em solid rgb(44, 43, 43);
-        border-left: 1em solid rgb(44, 43, 43);
-        border-bottom: 1em solid rgb(44, 43, 43);
     }
 
     .evidencias, .criaturas {
@@ -92,14 +104,13 @@
     }
 
     .secao-criaturas {
+        flex: .7;
         display: flex;
         justify-content: center;
         background-color: var(--cinza-escuro);
         overflow: scroll;
         grid-area: criaturas;
         padding: 40px 10px;
-        border-top: 1em solid rgb(44, 43, 43);
-        border-bottom: 1em solid rgb(44, 43, 43);
     }
     
     .card {
@@ -130,9 +141,6 @@
         font-size: 40px;
         background-color: var(--cinza);
         grid-area: nav;
-        border-right: .4em solid rgb(44, 43, 43);
-        border-top: .4em solid rgb(44, 43, 43);
-        border-bottom: .4em solid rgb(44, 43, 43);
     }
 
     nav > a {
@@ -143,7 +151,46 @@
         padding: 10px;
         border-radius: 100px;
         box-shadow: 0px -5px 5px 0px black;
-        /* box-shadow: 1px 8px 10px 0px black inset; */
         color: black;
+    }
+    
+    nav > a:active {
+        font-size: 32px;
+        padding: 14px;
+        box-shadow: 1px 8px 10px 0px black inset;
+    }
+
+
+    .informacoes {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: var(--preto);
+        gap: 20px 0;
+        padding: 10px;
+        overflow: scroll;
+    }
+
+    .cards-informacao {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: whitesmoke;
+        height: 45svh;
+        width: 20svw;
+        padding: 10px 0;
+        border-radius: 16px;
+    }
+    
+    .cards-informacao-titulo {
+        margin-top: 10px;
+    }
+
+    .card-foto {
+        height: 80%;
+        width: 80%;
+        background-color: #23003B;
+        border-radius: 6px;
     }
 }

@@ -13,41 +13,75 @@
         <ion-icon name="phone-portrait-outline"></ion-icon>
     </div>
     
-    <div class="container">
+    <main id="home">
         <section class="secao-evidencias">
             <article class="evidencias">
                 <button class="card">Teste</button>
-                <button class="card">Teste</button>
-                <button class="card">Teste</button>
-                <button class="card">Teste</button>
-                <button class="card">Teste</button>
-                <button class="card">Teste</button>
-                <button class="card">Teste</button>
-                <button class="card">Teste</button>
-                <button class="card">Teste</button>
             </article>
         </section>
+        
+        <hr style="width: 11px; background-color: #1E1C1C; border: none;">
+        
         <section class="secao-criaturas">
             <article class="criaturas">
                 <button class="card">teste 1</button>
-                <button class="card">teste 2</button>
-                <button class="card">teste 3</button>
-                <button class="card">teste 4</button>
-                <button class="card">teste 4</button>
-                <button class="card">teste 4</button>
-                <button class="card">teste 4</button>
-                <button class="card">teste 4</button>
-                <button class="card">teste 4</button>
             </article>
         </section>
-        <nav>
-            <a onclick=""><ion-icon name="file-tray-full"></ion-icon></a>
-            <a onclick=""><ion-icon name="home"></ion-icon></a>
-            <a onclick=""><ion-icon name="exit-outline"></ion-icon></a>
-        </nav>
-    </div>
+        
+        <hr style="width: 11px; background-color: #1E1C1C; border: none;">
+    </main>
+    
+    <section class="informacoes" id="informacoes">
+        <article class="cards-informacao">
+            <div class="card-foto"><img src=""></div>
+            <h3 class="cards-informacao-titulo">Nome</h3>
+        </article>
 
-    <script></script>
+        <article class="cards-informacao">
+            <div class="card-foto"><img src=""></div>
+            <h3 class="cards-informacao-titulo">Nome</h3>
+        </article>
+
+        <article class="cards-informacao">
+            <div class="card-foto"><img src=""></div>
+            <h3 class="cards-informacao-titulo">Nome</h3>
+        </article>
+
+        <article class="cards-informacao">
+            <div class="card-foto"><img src=""></div>
+            <h3 class="cards-informacao-titulo">Nome</h3>
+        </article>
+        
+        <article class="cards-informacao">
+            <div class="card-foto"><img src=""></div>
+            <h3 class="cards-informacao-titulo">Nome</h3>
+        </article>
+
+        <article class="cards-informacao">
+            <div class="card-foto"><img src=""></div>
+            <h3 class="cards-informacao-titulo">Nome</h3>
+        </article>
+
+        <article class="cards-informacao">
+            <div class="card-foto"><img src=""></div>
+            <h3 class="cards-informacao-titulo">Nome</h3>
+        </article>
+
+        <article class="cards-informacao">
+            <div class="card-foto"><img src=""></div>
+            <h3 class="cards-informacao-titulo">Nome</h3>
+        </article>
+    </section>
+
+    <hr style="width: 11px; background-color: #1E1C1C; border: none;">
+
+    <nav>
+        <a onclick="trocarPagina(informacoes)"><ion-icon name="file-tray-full" class="icone"></ion-icon></a>
+        <a onclick="trocarPagina(home)"><ion-icon name="home"></ion-icon></a>
+        <a onclick=""><ion-icon name="exit-outline"></ion-icon></a>
+    </nav>
+
+    <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
