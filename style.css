@@ -4,45 +4,10 @@
     box-sizing: border-box;
 }
 
-
-
 :root {
     --cinza: #b3b3b3;
     --cinza-escuro: #747373;
     --preto: #292727;
-}
-
-main {
-    display: none;
-}
-
-nav {
-    display: none;
-}
-
-hr {
-    display: none;
-}
-
-.informacoes {
-    display: none;
-}
-
-.retrato {
-    height: 100svh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 50px;
-    color: whitesmoke;
-    background-color: rgb(30, 47, 92);
-}
-
-.retrato > ion-icon {
-    font-size: 30svh;
-    animation: rodar 3s infinite linear;
 }
 
 ::-webkit-scrollbar {
@@ -67,6 +32,45 @@ hr {
     }
     100% {
         transform: rotate(10deg);
+    }
+}
+
+
+@media screen and (orientation: portrait) {
+    body {
+        border: none;
+    }
+    main {
+        display: none;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    hr {
+        display: none;
+    }
+    
+    .informacoes {
+        display: none;
+    }
+    
+    .retrato {
+        height: 100svh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        color: whitesmoke;
+        background-color: rgb(30, 47, 92);
+    }
+    
+    .retrato > ion-icon {
+        font-size: 30svh;
+        animation: rodar 3s infinite linear;
     }
 }
 
@@ -159,6 +163,7 @@ hr {
         font-size: 40px;
         background-color: var(--cinza);
         grid-area: nav;
+        overflow: hidden;
     }
 
     nav > a {
