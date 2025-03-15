@@ -21,6 +21,10 @@ main {
     display: none;
 }
 
+.informacoes {
+    display: none;
+}
+
 .retrato {
     height: 100svh;
     display: flex;
@@ -69,7 +73,7 @@ main {
     }
     main {
         flex: 1;
-        display: none;
+        display: flex;
     }
     
     section {
@@ -163,7 +167,7 @@ main {
 
     .informacoes {
         flex: 1;
-        display: flex;
+        display: none;
         flex-wrap: wrap;
         justify-content: space-around;
         background-color: var(--preto);
