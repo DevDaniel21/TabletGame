@@ -7,7 +7,7 @@ function trocarPagina(paginaEscolhida) {
     
         paginaEscolhida.style.display = "flex";
 }
-
+// Tela cheia----------------------------------------------------
 const tela = document.documentElement;
 const telaCheia = document.getElementById('telaCheia');
 const sairTelaCheia = document.getElementById('sairTelaCheia');
@@ -27,4 +27,16 @@ function fecharTelaCheia() {
                 telaCheia.style.display = "flex"
                 console.log("teste2")
         }
+}
+
+// Evidencias------------------------------------------------------
+const evidencias = [
+        document.getElementById('emf'),
+
+];
+
+function marcar(evidencia) {
+        evidencia.style.border = "2px solid black";
+        evidencia.style.borderRadius = "100%";
+        console.log("tesds")
 }
