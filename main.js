@@ -36,7 +36,27 @@ const evidencias = [
 ];
 
 function marcar(evidencia) {
-        evidencia.style.border = "2px solid black";
-        evidencia.style.borderRadius = "100%";
-        console.log("tesds")
+        if (evidencia.style.color == "") {
+                console.log("borda")
+                evidencia.style.color = "whitesmoke";
+                evidencia.style.border = "2px solid black";
+                evidencia.style.borderRadius = "100%";
+        } 
+        else if (evidencia.style.border == "2px solid black") {
+                console.log("linha")
+                evidencia.style.border = "none";
+                evidencia.style.borderRadius = "none";
+                evidencia.style.textDecoration = "line-through red 2px";
+        } 
+        else if (evidencia.style.textDecoration != "") {
+                console.log("cinza")
+                evidencia.style.textDecoration = "";
+                evidencia.style.color = "#929292";
+        } 
+        else if (evidencia.style.color != "") {
+                console.log("normal")
+                evidencia.style.color = "";
+        }
 }
+
+// Fantasmas ---------------------------------------------------------

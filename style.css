@@ -148,8 +148,6 @@
         border: none;
         font-weight: normal;
         color: whitesmoke;
-        /* Quando recusado text-decoration: line-through red 2px; */
-        /* Quando selecionado border-radius: 100%; */
     }
 
     nav {
