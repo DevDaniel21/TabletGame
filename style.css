@@ -113,7 +113,7 @@
     .evidencias, .criaturas {
         display: flex;
         justify-content: space-between;
-        align-content: space-around;
+        align-content: flex-start;
         gap: 3em 1px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -140,11 +140,11 @@
         flex-wrap: nowrap;
         align-items: center;
         justify-content: center;
-        width: 10svw;
-        height: 10svh;
+        min-width: 10svw;
+        min-height: 10svh;
         font-size: 16px;
         background: none;
-        padding:1.7em 3.4em;
+        padding:1.7em 2.4em;
         border: none;
         font-weight: normal;
         color: whitesmoke;
