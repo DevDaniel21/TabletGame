@@ -17,11 +17,6 @@
         <section class="secao-evidencias">
             <article class="evidencias" id="evidencias">
                 <button onclick="marcar(this)" class="card" style="cursor: pointer;">EMF 5</button>
-                <button onclick="marcar(this)" class="card" style="cursor: pointer;">EMF 5</button>
-                <button onclick="marcar(this)" class="card" style="cursor: pointer;">EMF 5</button>
-                <button onclick="marcar(this)" class="card" style="cursor: pointer;">EMF 5</button>
-                <button onclick="marcar(this)" class="card" style="cursor: pointer;">EMF 5</button>
-                <button onclick="marcar(this)" class="card" style="cursor: pointer;">EMF 5</button>
             </article>
         </section>
         
@@ -39,6 +34,13 @@
 
     <hr style="width: 11px; background-color: #1E1C1C; border: none;">
 
+    <!-- Inicio de cada seção -->
+    <section class="informacao-selecionada" id="informacao-selecionada" style="background-color: aqua; display: flex; align-items: center; justify-content: center;">
+        Inicio de cada seção
+        <figure></figure>
+    </section>
+
+
     <nav>
         <a onclick="trocarPagina(informacoes)"><ion-icon name="file-tray-full" class="icone"></ion-icon></a>
         <a onclick="trocarPagina(home)"><ion-icon name="home"></ion-icon></a>
@@ -49,7 +51,8 @@
     <a onclick="fecharTelaCheia()" id="sairTelaCheia" style="position: absolute; color: #4A007B; font-size: 32px; margin: 10px 0 0 10px; display: none;"><ion-icon name="resize-outline"></ion-icon></a>
 
     <script src="main.js"></script>
-    <script src="criaturas.js"></script>
+    <script src="models/Criatura.model.js"></script>
+    <script src="views/Criatura.views.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

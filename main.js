@@ -48,3 +48,14 @@ function marcar(evidencia) {
 }
 
 // Fantasmas ---------------------------------------------------------
+
+
+
+
+// TESTES ------------------------------------------------------------
+function testes() {
+        home.style.display = 'none'
+        informacoes.style.display = 'none'
+}
+
+testes()
