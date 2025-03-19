@@ -8,6 +8,6 @@ class criatura {
 }
 
 const criaturas = [
-    new criatura('Poltergeist', 'Sombrio', 'Fantasma que brinca com objetos', 'EMF 5'),
+    new criatura('Poltergeist', 'Sombrio', 'url(/imgs/garota_esquisita.png)','Fantasma que brinca com objetos', 'EMF 5'),
     new criatura('Demônio', 'Sombrio', 'descricao', 'evidencias'),
 ]

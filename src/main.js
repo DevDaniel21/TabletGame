@@ -1,5 +1,6 @@
 const home = document.getElementById('home');
 const informacoes = document.getElementById('informacoes');
+const informacao_selecionada = document.getElementById('informacao-selecionada')
 
 function trocarPagina(paginaEscolhida) {
         home.style.display = "none";
