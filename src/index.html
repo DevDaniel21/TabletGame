@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>N.E.R.D.S</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="retrato">
@@ -35,7 +35,7 @@
     <hr style="width: 11px; background-color: #1E1C1C; border: none; display: none;">
 
     <!-- Inicio de cada seção -->
-    <section class="informacao-selecionada" id="informacao-selecionada">
+    <section class="informacao-selecionada" id="informacao-selecionada" style="display: none;">
     </section>
 
 
@@ -48,9 +48,11 @@
     
     <a onclick="fecharTelaCheia()" id="sairTelaCheia" style="position: absolute; color: whitesmoke; font-size: 32px; margin: 10px 0 0 10px; display: none;"><ion-icon name="resize-outline"></ion-icon></a>
 
-    <script src="main.js"></script>
     <script src="models/Criatura.model.js"></script>
+    <script src="models/Item.model.js"></script>
     <script src="views/Criatura.views.js"></script>
+    <script src="js/main.js"></script>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

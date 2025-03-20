@@ -5,8 +5,13 @@ const informacao_selecionada = document.getElementById('informacao-selecionada')
 function trocarPagina(paginaEscolhida) {
         home.style.display = "none";
         informacoes.style.display = "none";
+        informacao_selecionada.style.display = "none";
     
         paginaEscolhida.style.display = "flex";
+        if (paginaEscolhida == informacoes) {
+                gerarTela('informacoes')
+        }
+
 }
 // Tela cheia----------------------------------------------------
 const tela = document.documentElement;
@@ -54,9 +59,3 @@ function marcar(evidencia) {
 
 
 // TESTES ------------------------------------------------------------
-function testes() {
-        home.style.display = 'none'
-        informacoes.style.display = 'none'
-}
-
-testes()
