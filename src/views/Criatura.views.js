@@ -38,7 +38,6 @@ function gerarTela(pagina, numero) {
     else if (pagina == 'itens') {
         informacoes.innerHTML = ''
         itens.forEach(item => {
-            informacoes.innerHTML = ''
             informacoes.innerHTML += `
             <article class="cards-informacao" onclick="gerarTela('item', ${item.id})"><figure class="card-foto" style="background-image: ${item.foto}"></figure><h3 class="cards-informacao-titulo">${item.nome}</h3></article>`
         })
