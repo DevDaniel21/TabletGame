@@ -8,7 +8,7 @@ class item {
 }
 
 const itens = [
-    new item( 0, 'EMF', undefined, 'Usado para verificar atividade paranormal.'),
-    new item( 1, 'Isqueiro', undefined, 'Usado para acender velas, riturais e iluminação.'),
-    new item( 2, 'Luz UV', undefined, 'Usado para enxergar impressões digitais de fantasmas.'),
+    new item( 0, 'EMF', undefined, 'Nenhuma descrição.'),
+    new item( 1, 'Isqueiro', undefined, 'Nenhuma descrição.'),
+    new item( 2, 'Luz UV', undefined, 'Nenhuma descrição.'),
 ]

@@ -208,11 +208,11 @@
     .card-foto {
         height: 80%;
         width: 80%;
-        background-color: #23003B;
+        background-color: #000000;
         border-radius: 6px;
         background-position: top;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
     .informacao-selecionada {
@@ -234,7 +234,7 @@
         box-shadow: 1px 13px 10px 0px #000000;
         background-position: top;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 
     .informacao-descricao {
